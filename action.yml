@@ -1,5 +1,12 @@
 name: "GuilleDF's Buckaroo action"
 description: "Use buck and buckaroo from the CI"
+inputs:
+  commands:
+    description: "Semicolon-separated commands to run"
+    required: true
+    default: echo "No commands executed"
 runs:
   using: "docker"
   image: "Dockerfile"
+  args:
+    - ${{ inputs.commands }}

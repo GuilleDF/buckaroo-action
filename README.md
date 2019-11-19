@@ -13,8 +13,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v1
-      - uses: GuilleDF/buckaroo-action@v1.0.0
-      - name: Build
-        run: buck build :ext2fs
-
+      - name: Buck build
+        uses: GuilleDF/buckaroo-action@v1.0.0
+        with:
+          commands: buck build :ext2fs
 ```
