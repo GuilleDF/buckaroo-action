@@ -14,7 +14,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: Buck build
-        uses: GuilleDF/buckaroo-action@v1.0.0
+        uses: GuilleDF/buckaroo-action@v1.0.1
         with:
           commands: buck build :ext2fs
 ```
