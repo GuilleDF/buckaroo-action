@@ -2,7 +2,7 @@ FROM ubuntu:18.04
 
 RUN \
   apt update && \
-  apt install -yq curl openjdk-8-jre-headless python2.7 libicu60
+  apt install -yq curl openjdk-8-jre-headless python2.7 libicu60 libxml2 gcc
 
 RUN \
   curl -L https://github.com/facebook/buck/releases/download/v2019.10.17.01/buck.2019.10.17.01_all.deb -o buck.deb && \
