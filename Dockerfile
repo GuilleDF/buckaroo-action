@@ -13,6 +13,8 @@ RUN \
   curl -L https://github.com/LoopPerfect/buckaroo/releases/download/v2.2.0/buckaroo-linux -o /bin/buckaroo && \
   chmod +x /bin/buckaroo
 
+RUN ln -s /usr/bin/python2.7 /usr/bin/python
+
 COPY entrypoint.sh /sbin/entrypoint.sh
 
 ENTRYPOINT ["/sbin/entrypoint.sh"]
