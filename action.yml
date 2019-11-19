@@ -1,4 +1,4 @@
-name: "Buckaroo"
+name: "GuilleDF's Buckaroo action"
 description: "Use buck and buckaroo from the CI"
 runs:
   using: "docker"
